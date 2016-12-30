@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FD6139CD1E16FFE500891D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139CC1E16FFE500891D37 /* AppDelegate.swift */; };
+		FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139CE1E16FFE500891D37 /* ViewController.swift */; };
+		FD6139D21E16FFE500891D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6139D01E16FFE500891D37 /* Main.storyboard */; };
+		FD6139D51E16FFE500891D37 /* Preso.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FD6139D31E16FFE500891D37 /* Preso.xcdatamodeld */; };
+		FD6139D71E16FFE500891D37 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD6139D61E16FFE500891D37 /* Assets.xcassets */; };
+		FD6139DA1E16FFE500891D37 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6139D81E16FFE500891D37 /* LaunchScreen.storyboard */; };
+		FD6139E51E16FFE500891D37 /* PresoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139E41E16FFE500891D37 /* PresoTests.swift */; };
+		FD6139F01E16FFE500891D37 /* PresoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139EF1E16FFE500891D37 /* PresoUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FD6139E11E16FFE500891D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6139C11E16FFE500891D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6139C81E16FFE500891D37;
+			remoteInfo = Preso;
+		};
+		FD6139EC1E16FFE500891D37 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FD6139C11E16FFE500891D37 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FD6139C81E16FFE500891D37;
+			remoteInfo = Preso;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FD6139C91E16FFE500891D37 /* Preso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preso.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6139CC1E16FFE500891D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FD6139CE1E16FFE500891D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FD6139D11E16FFE500891D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FD6139D41E16FFE500891D37 /* Preso.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Preso.xcdatamodel; sourceTree = "<group>"; };
+		FD6139D61E16FFE500891D37 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FD6139D91E16FFE500891D37 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FD6139DB1E16FFE500891D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6139E01E16FFE500891D37 /* PresoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6139E41E16FFE500891D37 /* PresoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresoTests.swift; sourceTree = "<group>"; };
+		FD6139E61E16FFE500891D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD6139EB1E16FFE500891D37 /* PresoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PresoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD6139EF1E16FFE500891D37 /* PresoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresoUITests.swift; sourceTree = "<group>"; };
+		FD6139F11E16FFE500891D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FD6139C61E16FFE500891D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139DD1E16FFE500891D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139E81E16FFE500891D37 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FD6139C01E16FFE400891D37 = {
+			isa = PBXGroup;
+			children = (
+				FD6139CB1E16FFE500891D37 /* Preso */,
+				FD6139E31E16FFE500891D37 /* PresoTests */,
+				FD6139EE1E16FFE500891D37 /* PresoUITests */,
+				FD6139CA1E16FFE500891D37 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FD6139CA1E16FFE500891D37 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FD6139C91E16FFE500891D37 /* Preso.app */,
+				FD6139E01E16FFE500891D37 /* PresoTests.xctest */,
+				FD6139EB1E16FFE500891D37 /* PresoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FD6139CB1E16FFE500891D37 /* Preso */ = {
+			isa = PBXGroup;
+			children = (
+				FD6139CC1E16FFE500891D37 /* AppDelegate.swift */,
+				FD6139CE1E16FFE500891D37 /* ViewController.swift */,
+				FD6139D01E16FFE500891D37 /* Main.storyboard */,
+				FD6139D61E16FFE500891D37 /* Assets.xcassets */,
+				FD6139D81E16FFE500891D37 /* LaunchScreen.storyboard */,
+				FD6139DB1E16FFE500891D37 /* Info.plist */,
+				FD6139D31E16FFE500891D37 /* Preso.xcdatamodeld */,
+			);
+			path = Preso;
+			sourceTree = "<group>";
+		};
+		FD6139E31E16FFE500891D37 /* PresoTests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6139E41E16FFE500891D37 /* PresoTests.swift */,
+				FD6139E61E16FFE500891D37 /* Info.plist */,
+			);
+			path = PresoTests;
+			sourceTree = "<group>";
+		};
+		FD6139EE1E16FFE500891D37 /* PresoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FD6139EF1E16FFE500891D37 /* PresoUITests.swift */,
+				FD6139F11E16FFE500891D37 /* Info.plist */,
+			);
+			path = PresoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FD6139C81E16FFE500891D37 /* Preso */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6139F41E16FFE500891D37 /* Build configuration list for PBXNativeTarget "Preso" */;
+			buildPhases = (
+				FD6139C51E16FFE500891D37 /* Sources */,
+				FD6139C61E16FFE500891D37 /* Frameworks */,
+				FD6139C71E16FFE500891D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Preso;
+			productName = Preso;
+			productReference = FD6139C91E16FFE500891D37 /* Preso.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FD6139DF1E16FFE500891D37 /* PresoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6139F71E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoTests" */;
+			buildPhases = (
+				FD6139DC1E16FFE500891D37 /* Sources */,
+				FD6139DD1E16FFE500891D37 /* Frameworks */,
+				FD6139DE1E16FFE500891D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6139E21E16FFE500891D37 /* PBXTargetDependency */,
+			);
+			name = PresoTests;
+			productName = PresoTests;
+			productReference = FD6139E01E16FFE500891D37 /* PresoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FD6139EA1E16FFE500891D37 /* PresoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FD6139FA1E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoUITests" */;
+			buildPhases = (
+				FD6139E71E16FFE500891D37 /* Sources */,
+				FD6139E81E16FFE500891D37 /* Frameworks */,
+				FD6139E91E16FFE500891D37 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FD6139ED1E16FFE500891D37 /* PBXTargetDependency */,
+			);
+			name = PresoUITests;
+			productName = PresoUITests;
+			productReference = FD6139EB1E16FFE500891D37 /* PresoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FD6139C11E16FFE500891D37 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Snowbourne LLC";
+				TargetAttributes = {
+					FD6139C81E16FFE500891D37 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2JVK39FXFD;
+						ProvisioningStyle = Automatic;
+					};
+					FD6139DF1E16FFE500891D37 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2JVK39FXFD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD6139C81E16FFE500891D37;
+					};
+					FD6139EA1E16FFE500891D37 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 2JVK39FXFD;
+						ProvisioningStyle = Automatic;
+						TestTargetID = FD6139C81E16FFE500891D37;
+					};
+				};
+			};
+			buildConfigurationList = FD6139C41E16FFE500891D37 /* Build configuration list for PBXProject "Preso" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FD6139C01E16FFE400891D37;
+			productRefGroup = FD6139CA1E16FFE500891D37 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FD6139C81E16FFE500891D37 /* Preso */,
+				FD6139DF1E16FFE500891D37 /* PresoTests */,
+				FD6139EA1E16FFE500891D37 /* PresoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FD6139C71E16FFE500891D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6139DA1E16FFE500891D37 /* LaunchScreen.storyboard in Resources */,
+				FD6139D71E16FFE500891D37 /* Assets.xcassets in Resources */,
+				FD6139D21E16FFE500891D37 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139DE1E16FFE500891D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139E91E16FFE500891D37 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FD6139C51E16FFE500891D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */,
+				FD6139D51E16FFE500891D37 /* Preso.xcdatamodeld in Sources */,
+				FD6139CD1E16FFE500891D37 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139DC1E16FFE500891D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6139E51E16FFE500891D37 /* PresoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FD6139E71E16FFE500891D37 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FD6139F01E16FFE500891D37 /* PresoUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FD6139E21E16FFE500891D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6139C81E16FFE500891D37 /* Preso */;
+			targetProxy = FD6139E11E16FFE500891D37 /* PBXContainerItemProxy */;
+		};
+		FD6139ED1E16FFE500891D37 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FD6139C81E16FFE500891D37 /* Preso */;
+			targetProxy = FD6139EC1E16FFE500891D37 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FD6139D01E16FFE500891D37 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6139D11E16FFE500891D37 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FD6139D81E16FFE500891D37 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FD6139D91E16FFE500891D37 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FD6139F21E16FFE500891D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FD6139F31E16FFE500891D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FD6139F51E16FFE500891D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = Preso/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.Preso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		FD6139F61E16FFE500891D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = Preso/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.Preso;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		FD6139F81E16FFE500891D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = PresoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.PresoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Preso.app/Preso";
+			};
+			name = Debug;
+		};
+		FD6139F91E16FFE500891D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = PresoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.PresoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Preso.app/Preso";
+			};
+			name = Release;
+		};
+		FD6139FB1E16FFE500891D37 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = PresoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.PresoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Preso;
+			};
+			name = Debug;
+		};
+		FD6139FC1E16FFE500891D37 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = 2JVK39FXFD;
+				INFOPLIST_FILE = PresoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.snowbourne.PresoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = Preso;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FD6139C41E16FFE500891D37 /* Build configuration list for PBXProject "Preso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6139F21E16FFE500891D37 /* Debug */,
+				FD6139F31E16FFE500891D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FD6139F41E16FFE500891D37 /* Build configuration list for PBXNativeTarget "Preso" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6139F51E16FFE500891D37 /* Debug */,
+				FD6139F61E16FFE500891D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD6139F71E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6139F81E16FFE500891D37 /* Debug */,
+				FD6139F91E16FFE500891D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		FD6139FA1E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FD6139FB1E16FFE500891D37 /* Debug */,
+				FD6139FC1E16FFE500891D37 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FD6139D31E16FFE500891D37 /* Preso.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FD6139D41E16FFE500891D37 /* Preso.xcdatamodel */,
+			);
+			currentVersion = FD6139D41E16FFE500891D37 /* Preso.xcdatamodel */;
+			path = Preso.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FD6139C11E16FFE500891D37 /* Project object */;
+}
