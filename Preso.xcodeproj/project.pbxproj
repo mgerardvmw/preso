@@ -16,6 +16,9 @@
 		FD6139E51E16FFE500891D37 /* PresoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139E41E16FFE500891D37 /* PresoTests.swift */; };
 		FD6139F01E16FFE500891D37 /* PresoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139EF1E16FFE500891D37 /* PresoUITests.swift */; };
 		FD613A001E17022400891D37 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FD6139FF1E17022400891D37 /* StoreKit.framework */; };
+		FD613A051E170EDB00891D37 /* SBImgRenderPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A041E170EDB00891D37 /* SBImgRenderPdf.swift */; };
+		FD613A071E1710B100891D37 /* SBPresentationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A061E1710B100891D37 /* SBPresentationConstants.swift */; };
+		FD613A091E173C0600891D37 /* SBImgRenderPpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A081E173C0600891D37 /* SBImgRenderPpt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +55,9 @@
 		FD6139F11E16FFE500891D37 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD6139FD1E16FFF000891D37 /* Preso.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Preso.entitlements; sourceTree = "<group>"; };
 		FD6139FF1E17022400891D37 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		FD613A041E170EDB00891D37 /* SBImgRenderPdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBImgRenderPdf.swift; path = Preso/Data/SBImgRenderPdf.swift; sourceTree = "<group>"; };
+		FD613A061E1710B100891D37 /* SBPresentationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPresentationConstants.swift; sourceTree = "<group>"; };
+		FD613A081E173C0600891D37 /* SBImgRenderPpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBImgRenderPpt.swift; path = Preso/Data/SBImgRenderPpt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 			isa = PBXGroup;
 			children = (
 				FD6139CB1E16FFE500891D37 /* Preso */,
+				FD613A031E170E9200891D37 /* Cells */,
+				FD613A021E170E8B00891D37 /* Data */,
+				FD613A011E170E6F00891D37 /* ViewControllers */,
 				FD6139E31E16FFE500891D37 /* PresoTests */,
 				FD6139EE1E16FFE500891D37 /* PresoUITests */,
 				FD6139CA1E16FFE500891D37 /* Products */,
@@ -112,6 +121,7 @@
 				FD6139D81E16FFE500891D37 /* LaunchScreen.storyboard */,
 				FD6139DB1E16FFE500891D37 /* Info.plist */,
 				FD6139D31E16FFE500891D37 /* Preso.xcdatamodeld */,
+				FD613A061E1710B100891D37 /* SBPresentationConstants.swift */,
 			);
 			path = Preso;
 			sourceTree = "<group>";
@@ -140,6 +150,29 @@
 				FD6139FF1E17022400891D37 /* StoreKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FD613A011E170E6F00891D37 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FD613A021E170E8B00891D37 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				FD613A041E170EDB00891D37 /* SBImgRenderPdf.swift */,
+				FD613A081E173C0600891D37 /* SBImgRenderPpt.swift */,
+			);
+			name = Data;
+			sourceTree = "<group>";
+		};
+		FD613A031E170E9200891D37 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -292,7 +325,10 @@
 			files = (
 				FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */,
 				FD6139D51E16FFE500891D37 /* Preso.xcdatamodeld in Sources */,
+				FD613A071E1710B100891D37 /* SBPresentationConstants.swift in Sources */,
 				FD6139CD1E16FFE500891D37 /* AppDelegate.swift in Sources */,
+				FD613A051E170EDB00891D37 /* SBImgRenderPdf.swift in Sources */,
+				FD613A091E173C0600891D37 /* SBImgRenderPpt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
