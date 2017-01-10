@@ -17,6 +17,34 @@ class SBPresentationVC: UIViewController {
     var currentPage: Int = 0
     var controlsAreVisible = true
     var state = SBPresentationModeState.Finished
+    
+    private var viewIsConfigured = false
+    private var sliderVC: SBPresentationSliderVC!
+    private var mainVC: SBPresentationMainVC!
+    private var currentOrientation: UIInterfaceOrientation!
+    
+    private var activeImage: UIImage!
+//    private var activeImageData: Data!
+    private var displaysItem: UIBarButtonItem!
+    private var largePreviewItem: UIBarButtonItem!
+    private var showLargePreview = false
+    private var lastRenderedPage = -1
+    
+    // external display variables
+    private var externalWindow: UIWindow?
+    private var externalDisplay: UIScreen?
+    private var externalScreenMode: UIScreenMode?
+    private var availableExternalScreenModes: [UIScreenMode] = []
+    private var startTime: CFTimeInterval!
+    private var slideStartTime: CFTimeInterval!
+    private var currentTime: CFTimeInterval!
+    private var timeForPresentation: CFTimeInterval!
+    private var timeForSlide: CFTimeInterval!
+    private var timerState: SBPresentationTimerState = .Stopped
+    private var mainTimer: Timer!
+    private var renderer: SBImgRenderPdf!
+    
+    // MARK: View Lifecycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,15 +57,23 @@ class SBPresentationVC: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    // MARK: Bar Button Methods
+    
+    func backButtonPressed() {
+        renderer.state = .UserCancelled
+        state = .UserCancelled
+        dismissPresentationMode()
     }
-    */
-
+    
+    func dismissPresentationMode() {
+        if mainTimer != nil {
+            mainTimer.invalidate()
+            mainTimer = nil
+        }
+        mainVC.currentPage = -1
+        renderer.clearSlideImagesFromDisk()
+        dismiss(animated: true, completion: nil)
+    }
+    
+    
 }
