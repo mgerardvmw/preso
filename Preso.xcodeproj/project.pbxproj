@@ -19,6 +19,11 @@
 		FD613A051E170EDB00891D37 /* SBImgRenderPdf.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A041E170EDB00891D37 /* SBImgRenderPdf.swift */; };
 		FD613A071E1710B100891D37 /* SBPresentationConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A061E1710B100891D37 /* SBPresentationConstants.swift */; };
 		FD613A091E173C0600891D37 /* SBImgRenderPpt.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A081E173C0600891D37 /* SBImgRenderPpt.swift */; };
+		FD613A0B1E24611D00891D37 /* SBPresentationMainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A0A1E24611D00891D37 /* SBPresentationMainVC.swift */; };
+		FD613A0D1E24614B00891D37 /* SBPresentationView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD613A0C1E24614B00891D37 /* SBPresentationView.storyboard */; };
+		FD613A0F1E24619700891D37 /* SBPresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A0E1E24619700891D37 /* SBPresentationVC.swift */; };
+		FD613A111E2462AD00891D37 /* SBPresentationSettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A101E2462AD00891D37 /* SBPresentationSettingsTVC.swift */; };
+		FD613A131E24635D00891D37 /* SBPresentationSliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +63,11 @@
 		FD613A041E170EDB00891D37 /* SBImgRenderPdf.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBImgRenderPdf.swift; path = Preso/Data/SBImgRenderPdf.swift; sourceTree = "<group>"; };
 		FD613A061E1710B100891D37 /* SBPresentationConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SBPresentationConstants.swift; sourceTree = "<group>"; };
 		FD613A081E173C0600891D37 /* SBImgRenderPpt.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBImgRenderPpt.swift; path = Preso/Data/SBImgRenderPpt.swift; sourceTree = "<group>"; };
+		FD613A0A1E24611D00891D37 /* SBPresentationMainVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationMainVC.swift; path = Preso/ViewControllers/SBPresentationMainVC.swift; sourceTree = "<group>"; };
+		FD613A0C1E24614B00891D37 /* SBPresentationView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SBPresentationView.storyboard; sourceTree = "<group>"; };
+		FD613A0E1E24619700891D37 /* SBPresentationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationVC.swift; path = Preso/ViewControllers/SBPresentationVC.swift; sourceTree = "<group>"; };
+		FD613A101E2462AD00891D37 /* SBPresentationSettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationSettingsTVC.swift; path = Preso/ViewControllers/SBPresentationSettingsTVC.swift; sourceTree = "<group>"; };
+		FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationSliderVC.swift; path = Preso/ViewControllers/SBPresentationSliderVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +123,7 @@
 		FD6139CB1E16FFE500891D37 /* Preso */ = {
 			isa = PBXGroup;
 			children = (
+				FD613A0C1E24614B00891D37 /* SBPresentationView.storyboard */,
 				FD6139FD1E16FFF000891D37 /* Preso.entitlements */,
 				FD6139CC1E16FFE500891D37 /* AppDelegate.swift */,
 				FD6139CE1E16FFE500891D37 /* ViewController.swift */,
@@ -155,6 +166,10 @@
 		FD613A011E170E6F00891D37 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				FD613A0A1E24611D00891D37 /* SBPresentationMainVC.swift */,
+				FD613A0E1E24619700891D37 /* SBPresentationVC.swift */,
+				FD613A101E2462AD00891D37 /* SBPresentationSettingsTVC.swift */,
+				FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -296,6 +311,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD613A0D1E24614B00891D37 /* SBPresentationView.storyboard in Resources */,
 				FD6139DA1E16FFE500891D37 /* LaunchScreen.storyboard in Resources */,
 				FD6139D71E16FFE500891D37 /* Assets.xcassets in Resources */,
 				FD6139D21E16FFE500891D37 /* Main.storyboard in Resources */,
@@ -323,11 +339,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FD613A131E24635D00891D37 /* SBPresentationSliderVC.swift in Sources */,
 				FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */,
+				FD613A0B1E24611D00891D37 /* SBPresentationMainVC.swift in Sources */,
 				FD6139D51E16FFE500891D37 /* Preso.xcdatamodeld in Sources */,
+				FD613A0F1E24619700891D37 /* SBPresentationVC.swift in Sources */,
 				FD613A071E1710B100891D37 /* SBPresentationConstants.swift in Sources */,
 				FD6139CD1E16FFE500891D37 /* AppDelegate.swift in Sources */,
 				FD613A051E170EDB00891D37 /* SBImgRenderPdf.swift in Sources */,
+				FD613A111E2462AD00891D37 /* SBPresentationSettingsTVC.swift in Sources */,
 				FD613A091E173C0600891D37 /* SBImgRenderPpt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

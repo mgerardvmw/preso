@@ -12,7 +12,8 @@ import Foundation
 
 enum SBPresentationTransitionStyle {
     case Fade
-    case Flip
+    case FlipLeftRight
+    case FlipTopBottom
     case Page
     case None
 }
@@ -54,4 +55,4 @@ let sliderHeightStandard: Float = 130
 let sliderHeightStandardIpad: Float = 160
 let watchThumbnailSize: Float = 150
 let cellSpacing: Float = 3
-let mainImageAnimationTranstionDuration: Float = 0.6
+let mainImageAnimationTranstionDuration: Double = 0.6
