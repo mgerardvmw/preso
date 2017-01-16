@@ -228,7 +228,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sliderCell" id="EaF-5o-ndz" customClass="SFGOPresentationSliderCell">
+                                    <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="sliderCell" id="EaF-5o-ndz" customClass="SBSliderCell" customModule="Preso" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="130"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -292,14 +292,17 @@
                                             <constraint firstAttribute="centerY" secondItem="OrV-ud-HDw" secondAttribute="centerY" constant="14.5" id="rXC-BZ-hjK"/>
                                         </constraints>
                                         <connections>
-                                            <outlet property="imageBottomConstraint" destination="p90-i1-aqh" id="l1y-rR-9e7"/>
+                                            <outlet property="imageBottomConstraint" destination="p90-i1-aqh" id="ebi-wh-PAb"/>
                                             <outlet property="imageHeightConstaint" destination="1WG-qX-KDC" id="6YP-af-K55"/>
-                                            <outlet property="imageView" destination="99W-md-Syy" id="K5d-EY-GY9"/>
+                                            <outlet property="imageHeightConstraint" destination="1WG-qX-KDC" id="rum-BH-z6P"/>
+                                            <outlet property="imageView" destination="99W-md-Syy" id="lnZ-dj-0iV"/>
                                             <outlet property="imageWidthConstaint" destination="jnC-YN-5VA" id="lRo-XZ-XBv"/>
-                                            <outlet property="pageNumberLabel" destination="kpq-Rl-ABu" id="L5M-0v-KI9"/>
-                                            <outlet property="slideTimerLabel" destination="Gr4-9S-ZzJ" id="vgj-XV-BaA"/>
+                                            <outlet property="imageWidthConstraint" destination="jnC-YN-5VA" id="gzI-e6-cEy"/>
+                                            <outlet property="pageNumberLabel" destination="kpq-Rl-ABu" id="U7Q-Sx-gih"/>
+                                            <outlet property="slideTimerLabel" destination="Gr4-9S-ZzJ" id="xeh-Ux-izK"/>
                                             <outlet property="slideTimerView" destination="8Pv-Fu-98w" id="s5C-mN-pBN"/>
-                                            <outlet property="spinnerView" destination="OrV-ud-HDw" id="26y-d5-frB"/>
+                                            <outlet property="spinnerView" destination="OrV-ud-HDw" id="hwC-bu-bsR"/>
+                                            <outlet property="timerView" destination="8Pv-Fu-98w" id="bkn-Tn-G9X"/>
                                         </connections>
                                     </collectionViewCell>
                                     <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="placeholderCell" id="ftW-Mo-584" customClass="SFGOPresentationSliderCell">

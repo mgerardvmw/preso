@@ -46,6 +46,7 @@ extension Notification.Name {
         static let ImageReady = Notification.Name(rawValue: "SBnotifyImageReadyNotification")
         static let SlideTimerUpdate = Notification.Name(rawValue: "SBnotifySlideTimerUpdate")
         static let ResizeCellsForLargePreviewMode = Notification.Name(rawValue: "notifyResizeCellsForLargePreviewMode")
+        static let SliderDidScroll = Notification.Name(rawValue: "sliderDidScroll")
     }
 }
 

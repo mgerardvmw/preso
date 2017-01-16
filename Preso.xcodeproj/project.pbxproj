@@ -24,6 +24,8 @@
 		FD613A0F1E24619700891D37 /* SBPresentationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A0E1E24619700891D37 /* SBPresentationVC.swift */; };
 		FD613A111E2462AD00891D37 /* SBPresentationSettingsTVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A101E2462AD00891D37 /* SBPresentationSettingsTVC.swift */; };
 		FD613A131E24635D00891D37 /* SBPresentationSliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */; };
+		FDD2D0CF1E25CFB40028F304 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD2D0CE1E25CFB40028F304 /* Icons.xcassets */; };
+		FDD2D0D11E2C02DD0028F304 /* SBSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +70,8 @@
 		FD613A0E1E24619700891D37 /* SBPresentationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationVC.swift; path = Preso/ViewControllers/SBPresentationVC.swift; sourceTree = "<group>"; };
 		FD613A101E2462AD00891D37 /* SBPresentationSettingsTVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationSettingsTVC.swift; path = Preso/ViewControllers/SBPresentationSettingsTVC.swift; sourceTree = "<group>"; };
 		FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationSliderVC.swift; path = Preso/ViewControllers/SBPresentationSliderVC.swift; sourceTree = "<group>"; };
+		FDD2D0CE1E25CFB40028F304 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
+		FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBSliderCell.swift; path = Preso/Cells/SBSliderCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +137,7 @@
 				FD6139DB1E16FFE500891D37 /* Info.plist */,
 				FD6139D31E16FFE500891D37 /* Preso.xcdatamodeld */,
 				FD613A061E1710B100891D37 /* SBPresentationConstants.swift */,
+				FDD2D0CE1E25CFB40028F304 /* Icons.xcassets */,
 			);
 			path = Preso;
 			sourceTree = "<group>";
@@ -186,6 +191,7 @@
 		FD613A031E170E9200891D37 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -315,6 +321,7 @@
 				FD6139DA1E16FFE500891D37 /* LaunchScreen.storyboard in Resources */,
 				FD6139D71E16FFE500891D37 /* Assets.xcassets in Resources */,
 				FD6139D21E16FFE500891D37 /* Main.storyboard in Resources */,
+				FDD2D0CF1E25CFB40028F304 /* Icons.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +346,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD2D0D11E2C02DD0028F304 /* SBSliderCell.swift in Sources */,
 				FD613A131E24635D00891D37 /* SBPresentationSliderVC.swift in Sources */,
 				FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */,
 				FD613A0B1E24611D00891D37 /* SBPresentationMainVC.swift in Sources */,
@@ -606,6 +614,7 @@
 				FD6139F61E16FFE500891D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6139F71E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoTests" */ = {
 			isa = XCConfigurationList;
@@ -614,6 +623,7 @@
 				FD6139F91E16FFE500891D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FD6139FA1E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoUITests" */ = {
 			isa = XCConfigurationList;
@@ -622,6 +632,7 @@
 				FD6139FC1E16FFE500891D37 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
