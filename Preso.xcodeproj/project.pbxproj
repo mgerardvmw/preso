@@ -26,6 +26,7 @@
 		FD613A131E24635D00891D37 /* SBPresentationSliderVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */; };
 		FDD2D0CF1E25CFB40028F304 /* Icons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FDD2D0CE1E25CFB40028F304 /* Icons.xcassets */; };
 		FDD2D0D11E2C02DD0028F304 /* SBSliderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */; };
+		FDD2D0D41E2F385A0028F304 /* space.pdf in Resources */ = {isa = PBXBuildFile; fileRef = FDD2D0D31E2F385A0028F304 /* space.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,6 +73,7 @@
 		FD613A121E24635D00891D37 /* SBPresentationSliderVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBPresentationSliderVC.swift; path = Preso/ViewControllers/SBPresentationSliderVC.swift; sourceTree = "<group>"; };
 		FDD2D0CE1E25CFB40028F304 /* Icons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Icons.xcassets; sourceTree = "<group>"; };
 		FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SBSliderCell.swift; path = Preso/Cells/SBSliderCell.swift; sourceTree = "<group>"; };
+		FDD2D0D31E2F385A0028F304 /* space.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; name = space.pdf; path = Preso/testFiles/space.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 		FD6139C01E16FFE400891D37 = {
 			isa = PBXGroup;
 			children = (
+				FDD2D0D21E2F384F0028F304 /* testFiles */,
 				FD6139CB1E16FFE500891D37 /* Preso */,
 				FD613A031E170E9200891D37 /* Cells */,
 				FD613A021E170E8B00891D37 /* Data */,
@@ -194,6 +197,14 @@
 				FDD2D0D01E2C02DD0028F304 /* SBSliderCell.swift */,
 			);
 			name = Cells;
+			sourceTree = "<group>";
+		};
+		FDD2D0D21E2F384F0028F304 /* testFiles */ = {
+			isa = PBXGroup;
+			children = (
+				FDD2D0D31E2F385A0028F304 /* space.pdf */,
+			);
+			name = testFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FDD2D0D41E2F385A0028F304 /* space.pdf in Resources */,
 				FD613A0D1E24614B00891D37 /* SBPresentationView.storyboard in Resources */,
 				FD6139DA1E16FFE500891D37 /* LaunchScreen.storyboard in Resources */,
 				FD6139D71E16FFE500891D37 /* Assets.xcassets in Resources */,

@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func openTestPresentation(_ sender: UIButton) {
+        let path = Bundle.main.path(forResource: "space", ofType: "pdf")
+        let renderer = SBImgRenderPdf(path: URL(fileURLWithPath: path!))
+        
+    }
 
 }
 

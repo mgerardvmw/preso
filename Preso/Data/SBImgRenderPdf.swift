@@ -167,7 +167,7 @@ class SBImgRenderPdf: NSObject {
         var maxDim: Float = 0.0
         var varScale: CGFloat = 1.0
         if type == .Thumbnail {
-            maxDim = UIDevice.current.userInterfaceIdiom == .pad ? sliderHeightStandardIpad : sliderHeightStandard
+            maxDim = Float(isIpad ? sliderHeightStandardIpad : sliderHeightStandard)
         } else if type == .Watch {
             maxDim = watchThumbnailSize
             varScale = 0.0

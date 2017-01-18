@@ -336,9 +336,9 @@
                     <extendedEdge key="edgesForExtendedLayout"/>
                     <toolbarItems/>
                     <connections>
-                        <outlet property="sliderBGView" destination="i4o-lc-VtG" id="rrq-EV-Bcq"/>
-                        <outlet property="sliderBGViewTopConstraint" destination="7KT-V4-aC6" id="6WH-T7-sKj"/>
-                        <outlet property="sliderCollectionView" destination="ULP-jC-thr" id="Hy7-UG-GWK"/>
+                        <outlet property="sliderBGView" destination="i4o-lc-VtG" id="gzE-J6-UL4"/>
+                        <outlet property="sliderBGViewTopConstraint" destination="7KT-V4-aC6" id="n6L-5g-l3y"/>
+                        <outlet property="sliderCollectionView" destination="ULP-jC-thr" id="Bc0-J6-cSF"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2sm-cH-aEj" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -375,7 +375,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Nh-gX-dWz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-45" y="1048"/>
+            <point key="canvasLocation" x="-50" y="969"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="r3H-LB-65s">
@@ -387,10 +387,10 @@
                         <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="SettingsCell" id="WuW-2G-AJ4">
-                                <rect key="frame" x="0.0" y="56" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="WuW-2G-AJ4" id="mlX-eg-1Iw">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>

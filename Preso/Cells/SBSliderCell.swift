@@ -19,16 +19,17 @@ class SBSliderCell: UICollectionViewCell {
     @IBOutlet weak var pageNumberLabel: UILabel!
     @IBOutlet weak var slideTimerLabel: UILabel!
     
-    private var renderer: SBImgRenderPdf!
+    weak var renderer: SBImgRenderPdf!
     
-    private var currentPage: Int = 0
-    private var activePage: Int = 0
-    private var showLargePreview = false
+    var currentPage: Int = 0
+    var activePage: Int = 0
+    var showLargePreview = false
     private var parentVC: SBPresentationSliderVC!
     private var cellIsActive = false
     private var widthRatio: CGFloat = 0.0
     private var startWidth: CGFloat = 0.0
     private var startHeight: CGFloat = 0.0
+    weak var parentView: SBPresentationSliderVC!
     
     override func awakeFromNib() {
         super.awakeFromNib()

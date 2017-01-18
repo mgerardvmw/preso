@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+import UIKit
 
 
 enum SBPresentationTransitionStyle {
@@ -52,8 +52,9 @@ extension Notification.Name {
 
 
 let presentationsBaseFilePath = "slidesTemp"
-let sliderHeightStandard: Float = 130
-let sliderHeightStandardIpad: Float = 160
+let sliderHeightStandard: CGFloat = 130
+let sliderHeightStandardIpad: CGFloat = 160
 let watchThumbnailSize: Float = 150
-let cellSpacing: Float = 3
+let cellSpacing: CGFloat = 3.0
 let mainImageAnimationTranstionDuration: Double = 0.6
+let isIpad = UIDevice.current.userInterfaceIdiom == .pad
