@@ -9,6 +9,8 @@
 import Foundation
 import UIKit
 
+let kGoogleCastReceiverAppID = "36ED3C8F"
+let kGoogleCastDebugLoggingEnabled = true
 
 enum SBPresentationTransitionStyle {
     case Fade

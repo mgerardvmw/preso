@@ -1,0 +1,14 @@
+PODS:
+  - google-cast-sdk (3.3.0):
+    - google-cast-sdk/Core (= 3.3.0)
+  - google-cast-sdk/Core (3.3.0)
+
+DEPENDENCIES:
+  - google-cast-sdk
+
+SPEC CHECKSUMS:
+  google-cast-sdk: da1989cbc1b9ff7b50ddb9dae5b1969d95a65a0f
+
+PODFILE CHECKSUM: 21fac888ceafe978ab061bfab6d416ebf6708035
+
+COCOAPODS: 1.2.0.rc.1

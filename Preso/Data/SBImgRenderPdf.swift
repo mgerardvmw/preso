@@ -68,8 +68,8 @@ class SBImgRenderPdf: NSObject {
         if fileData == nil {
             do {
                 try fileData = Data.init(contentsOf: filePath)
-            } catch let error as Error {
-                //TODO log error
+            } catch let error {
+                print("Error in openPDFContext: \(error)")
                 return
             }
         }
@@ -104,39 +104,57 @@ class SBImgRenderPdf: NSObject {
             return
         }
         
-        var filename: String?
-        var thumbnailName: String?
-        var microThumbnailName: String?
-        var page: CGPDFPage?
-        lastRenderedPage += 1
-        
-        if lastRenderedPage > numberOfPages {
-            return
-        }
-        
-        for i in lastRenderedPage ..< numberOfPages {
-            if state == .UserCancelled {
-                DispatchQueue.main.sync {
-                    closePDFContext()
-                    delegate?.dismissPresentationView()
-                }
-                return
-            } else if state == .Suspended {
-                lastRenderedPage -= 1
-                DispatchQueue.main.sync {
-                    NotificationCenter.default.post(name: Notification.Name.Preso.ShouldReleaseImagesOnBackground, object: nil)
-                }
+        DispatchQueue.global().async {
+            if self.pdf == nil {
+                self.openPDFContext()
+            }
+            var filename: String?
+            var thumbnailName: String?
+//            var microThumbnailName: String?
+//            var page: CGPDFPage?
+            self.lastRenderedPage += 1
+            
+            if self.lastRenderedPage > self.numberOfPages {
                 return
             }
             
-            autoreleasepool {
-                filename = "page" + String(i - 1) + ".jpg"
-                thumbnailName = "thumb" + String(i - 1) + ".jpg"
-                page = pdf.page(at: i)
-//                activeImage = 
+            for i in self.lastRenderedPage ..< self.numberOfPages {
+                print("rendering page \(i) of \(self.numberOfPages)")
+                if self.state == .UserCancelled {
+                    DispatchQueue.main.sync {
+                        self.closePDFContext()
+                        self.delegate?.dismissPresentationView()
+                    }
+                    return
+                } else if self.state == .Suspended {
+                    self.lastRenderedPage -= 1
+                    DispatchQueue.main.sync {
+                        NotificationCenter.default.post(name: Notification.Name.Preso.ShouldReleaseImagesOnBackground, object: nil)
+                    }
+                    return
+                }
                 
+                autoreleasepool {
+                    filename = "page" + String(i - 1) + ".jpg"
+                    thumbnailName = "thumb" + String(i - 1) + ".jpg"
+                    guard let page = self.pdf.page(at: i) else {
+                        print("Issue creating page ref")
+                        return
+                    }
+                    self.activeImage = self.createImageForPage(page: page, pageNum: i)
+                    self.activeImageData = UIImageJPEGRepresentation(self.activeImage!, 0.9)
+                    self.saveData(data: self.activeImageData!, filename: filename!)
+                    
+                    self.activeImage = self.thumbnailImageForType(type: .Thumbnail, image: self.activeImage!)
+                    self.activeImageData = UIImageJPEGRepresentation(self.activeImage!, 0.9)
+                    self.saveData(data: self.activeImageData!, filename: thumbnailName!)
+                    DispatchQueue.main.sync {
+                        NotificationCenter.default.post(name: Notification.Name.Preso.ImageReady, object: i - 1)
+                    }
+                    
+                }
             }
-            
+            self.closePDFContext()
         }
     }
     
@@ -144,19 +162,20 @@ class SBImgRenderPdf: NSObject {
         let rect = page.getBoxRect(.cropBox)
         let scale = 1080 / rect.size.height
         UIGraphicsBeginImageContextWithOptions(rect.size, false, scale)
-        let context = UIGraphicsGetCurrentContext()
-        context?.saveGState()
-        context?.ctm.translatedBy(x: 0.0, y: rect.size.height)
-        context?.ctm.scaledBy(x: 1.0, y: -1.0)
-        context?.fill(rect)
-        let transform = page.getDrawingTransform(.cropBox, rect: rect, rotate: 0, preserveAspectRatio: true)
-        context?.ctm.concatenating(transform)
-        context?.drawPDFPage(page)
-        
-        let image = UIGraphicsGetImageFromCurrentImageContext()
-        context?.restoreGState()
-        UIGraphicsEndImageContext()
-        return image
+        if let context = UIGraphicsGetCurrentContext() {
+            context.saveGState()
+            context.translateBy(x: 0.0, y: rect.size.height)
+            context.scaleBy(x: 1.0, y: -1.0)
+            context.fill(rect)
+            let transform = page.getDrawingTransform(.cropBox, rect: rect, rotate: 0, preserveAspectRatio: true)
+            context.ctm.concatenating(transform)
+            context.drawPDFPage(page)
+            let image = UIGraphicsGetImageFromCurrentImageContext()
+            context.restoreGState()
+            UIGraphicsEndImageContext()
+            return image
+        }
+        return nil
     }
     
     func thumbnailImageForType(type: SBPresentationImageType,image: UIImage) -> UIImage? {
@@ -203,6 +222,30 @@ class SBImgRenderPdf: NSObject {
         return image
     }
     
+    func saveData(data: Data, filename: String) {
+        var isDir: ObjCBool = false
+        let fm = FileManager.default
+        if fm.fileExists(atPath: baseFilePath().absoluteString, isDirectory: &isDir) == false {
+            do {
+                try fm.createDirectory(at: baseFilePath(), withIntermediateDirectories: true, attributes: nil)
+            } catch let error {
+                print("Error creating directory: \(baseFilePath().absoluteString) \n Error: \(error)")
+            }
+        }
+        let path = baseFilePath().appendingPathComponent(filename).path
+        fm.createFile(atPath: path, contents: data, attributes: nil)
+        print("creating file at path: \(path))")
+    }
+    
+    func baseFilePathString() -> String {
+        let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
+        if let basePath = paths.first {
+            let path = basePath + "/" + presentationsBaseFilePath
+            return path
+        }
+        return paths.first!
+    }
+    
     func baseFilePath() -> URL {
         let paths = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)
         let basePath = paths.first
@@ -219,11 +262,13 @@ class SBImgRenderPdf: NSObject {
                 let path = baseFilePath().appendingPathComponent(file.absoluteString, isDirectory: false)
                 do {
                     try fm.removeItem(at: path)
-                } catch let error as Error {
+                } catch let error {
+                    print("Error in clearSlideImagesFromDisk: \(error)")
                     //error deleting files
                 }
             }
-        } catch let error as Error {
+        } catch let error {
+            print("Error in clearSlideImagesFromDisk: \(error)")
             //error listing files
             return
         }

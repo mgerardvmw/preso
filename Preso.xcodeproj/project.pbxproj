@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		46341AD5A1AFD8CCD77B5A6D /* Pods_Preso_PresoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6EF023BDF5869BA9AC102D95 /* Pods_Preso_PresoUITests.framework */; };
+		5EF7DCD71063BF3F06A0F847 /* Pods_PresoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4241597FC74BA4D3E907E4E0 /* Pods_PresoUITests.framework */; };
+		B6A238A47F41CD339C27B602 /* Pods_Preso.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 24A55AFA3A73657C18F20F85 /* Pods_Preso.framework */; };
+		B869D1B963AA4DFDBB556865 /* Pods_PresoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C438FD93C19195D68B10A346 /* Pods_PresoTests.framework */; };
+		F712D99946F63B18E93DEFEC /* Pods_Preso_PresoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 851ECF55BED77C29D0BBE9DD /* Pods_Preso_PresoTests.framework */; };
 		FD6139CD1E16FFE500891D37 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139CC1E16FFE500891D37 /* AppDelegate.swift */; };
 		FD6139CF1E16FFE500891D37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD6139CE1E16FFE500891D37 /* ViewController.swift */; };
 		FD6139D21E16FFE500891D37 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD6139D01E16FFE500891D37 /* Main.storyboard */; };
@@ -47,6 +52,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		027992A854DAD7B8AC26F4EC /* Pods-Preso.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Preso/Pods-Preso.debug.xcconfig"; sourceTree = "<group>"; };
+		24A55AFA3A73657C18F20F85 /* Pods_Preso.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Preso.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D86EA13E37C7C5629D2D107 /* Pods-Preso-PresoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso-PresoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Preso-PresoTests/Pods-Preso-PresoTests.release.xcconfig"; sourceTree = "<group>"; };
+		2D8F2CE2379A645F3A31E64C /* Pods-PresoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PresoUITests/Pods-PresoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DBAD625D8F73DA2FE85AE0C /* Pods-PresoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresoTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PresoTests/Pods-PresoTests.release.xcconfig"; sourceTree = "<group>"; };
+		422D00FBC538C09E56D3D052 /* Pods-Preso-PresoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso-PresoUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Preso-PresoUITests/Pods-Preso-PresoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4241597FC74BA4D3E907E4E0 /* Pods_PresoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5030F66E436142FE8C4D9E06 /* Pods-Preso-PresoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso-PresoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Preso-PresoTests/Pods-Preso-PresoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		667C52912A08B7ECAB2C9100 /* Pods-PresoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresoTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PresoTests/Pods-PresoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6EF023BDF5869BA9AC102D95 /* Pods_Preso_PresoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Preso_PresoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7139C429084FE6D952A7BCBE /* Pods-PresoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PresoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-PresoUITests/Pods-PresoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		851ECF55BED77C29D0BBE9DD /* Pods_Preso_PresoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Preso_PresoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C438FD93C19195D68B10A346 /* Pods_PresoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PresoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D82388F4BFC953B4D2774156 /* Pods-Preso-PresoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso-PresoUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Preso-PresoUITests/Pods-Preso-PresoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FB08AAE4ED8A7524E0D002BA /* Pods-Preso.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Preso.release.xcconfig"; path = "Pods/Target Support Files/Pods-Preso/Pods-Preso.release.xcconfig"; sourceTree = "<group>"; };
 		FD6139C91E16FFE500891D37 /* Preso.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Preso.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD6139CC1E16FFE500891D37 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD6139CE1E16FFE500891D37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -82,6 +102,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD613A001E17022400891D37 /* StoreKit.framework in Frameworks */,
+				B6A238A47F41CD339C27B602 /* Pods_Preso.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +110,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B869D1B963AA4DFDBB556865 /* Pods_PresoTests.framework in Frameworks */,
+				F712D99946F63B18E93DEFEC /* Pods_Preso_PresoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,12 +119,31 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5EF7DCD71063BF3F06A0F847 /* Pods_PresoUITests.framework in Frameworks */,
+				46341AD5A1AFD8CCD77B5A6D /* Pods_Preso_PresoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DBE616ADFB0E4EA3B791EDBE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				027992A854DAD7B8AC26F4EC /* Pods-Preso.debug.xcconfig */,
+				FB08AAE4ED8A7524E0D002BA /* Pods-Preso.release.xcconfig */,
+				667C52912A08B7ECAB2C9100 /* Pods-PresoTests.debug.xcconfig */,
+				2DBAD625D8F73DA2FE85AE0C /* Pods-PresoTests.release.xcconfig */,
+				2D8F2CE2379A645F3A31E64C /* Pods-PresoUITests.debug.xcconfig */,
+				7139C429084FE6D952A7BCBE /* Pods-PresoUITests.release.xcconfig */,
+				5030F66E436142FE8C4D9E06 /* Pods-Preso-PresoTests.debug.xcconfig */,
+				2D86EA13E37C7C5629D2D107 /* Pods-Preso-PresoTests.release.xcconfig */,
+				422D00FBC538C09E56D3D052 /* Pods-Preso-PresoUITests.debug.xcconfig */,
+				D82388F4BFC953B4D2774156 /* Pods-Preso-PresoUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		FD6139C01E16FFE400891D37 = {
 			isa = PBXGroup;
 			children = (
@@ -114,6 +156,7 @@
 				FD6139EE1E16FFE500891D37 /* PresoUITests */,
 				FD6139CA1E16FFE500891D37 /* Products */,
 				FD6139FE1E17022400891D37 /* Frameworks */,
+				DBE616ADFB0E4EA3B791EDBE /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -167,6 +210,11 @@
 			isa = PBXGroup;
 			children = (
 				FD6139FF1E17022400891D37 /* StoreKit.framework */,
+				24A55AFA3A73657C18F20F85 /* Pods_Preso.framework */,
+				C438FD93C19195D68B10A346 /* Pods_PresoTests.framework */,
+				4241597FC74BA4D3E907E4E0 /* Pods_PresoUITests.framework */,
+				851ECF55BED77C29D0BBE9DD /* Pods_Preso_PresoTests.framework */,
+				6EF023BDF5869BA9AC102D95 /* Pods_Preso_PresoUITests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,9 +262,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD6139F41E16FFE500891D37 /* Build configuration list for PBXNativeTarget "Preso" */;
 			buildPhases = (
+				5238C2B97EF0E7904798785D /* [CP] Check Pods Manifest.lock */,
 				FD6139C51E16FFE500891D37 /* Sources */,
 				FD6139C61E16FFE500891D37 /* Frameworks */,
 				FD6139C71E16FFE500891D37 /* Resources */,
+				A91B9A764E50D0E76A5B4EA7 /* [CP] Embed Pods Frameworks */,
+				12AAC6733CBCE9A7964BF94E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -231,9 +282,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD6139F71E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoTests" */;
 			buildPhases = (
+				727AADDFC1750CA6A8A59539 /* [CP] Check Pods Manifest.lock */,
 				FD6139DC1E16FFE500891D37 /* Sources */,
 				FD6139DD1E16FFE500891D37 /* Frameworks */,
 				FD6139DE1E16FFE500891D37 /* Resources */,
+				38141EE43146E0A759EDC251 /* [CP] Embed Pods Frameworks */,
+				C943F72559B7E511F8C9601A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -249,9 +303,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FD6139FA1E16FFE500891D37 /* Build configuration list for PBXNativeTarget "PresoUITests" */;
 			buildPhases = (
+				9A8E1D1A8FEB54A7F95B214A /* [CP] Check Pods Manifest.lock */,
 				FD6139E71E16FFE500891D37 /* Sources */,
 				FD6139E81E16FFE500891D37 /* Frameworks */,
 				FD6139E91E16FFE500891D37 /* Resources */,
+				CD431D6019F8DB9C41A3E101 /* [CP] Embed Pods Frameworks */,
+				7FAE69D5DED169D9E4C0D53C /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -352,6 +409,144 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12AAC6733CBCE9A7964BF94E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso/Pods-Preso-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		38141EE43146E0A759EDC251 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso-PresoTests/Pods-Preso-PresoTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5238C2B97EF0E7904798785D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		727AADDFC1750CA6A8A59539 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		7FAE69D5DED169D9E4C0D53C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso-PresoUITests/Pods-Preso-PresoUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A8E1D1A8FEB54A7F95B214A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A91B9A764E50D0E76A5B4EA7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso/Pods-Preso-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C943F72559B7E511F8C9601A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso-PresoTests/Pods-Preso-PresoTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CD431D6019F8DB9C41A3E101 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Preso-PresoUITests/Pods-Preso-PresoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FD6139C51E16FFE500891D37 /* Sources */ = {
@@ -518,6 +713,7 @@
 		};
 		FD6139F51E16FFE500891D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 027992A854DAD7B8AC26F4EC /* Pods-Preso.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Preso/Preso.entitlements;
@@ -534,6 +730,7 @@
 		};
 		FD6139F61E16FFE500891D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB08AAE4ED8A7524E0D002BA /* Pods-Preso.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Preso/Preso.entitlements;
@@ -551,6 +748,7 @@
 		};
 		FD6139F81E16FFE500891D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5030F66E436142FE8C4D9E06 /* Pods-Preso-PresoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -566,6 +764,7 @@
 		};
 		FD6139F91E16FFE500891D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2D86EA13E37C7C5629D2D107 /* Pods-Preso-PresoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -581,6 +780,7 @@
 		};
 		FD6139FB1E16FFE500891D37 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 422D00FBC538C09E56D3D052 /* Pods-Preso-PresoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2JVK39FXFD;
@@ -595,6 +795,7 @@
 		};
 		FD6139FC1E16FFE500891D37 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D82388F4BFC953B4D2774156 /* Pods-Preso-PresoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				DEVELOPMENT_TEAM = 2JVK39FXFD;

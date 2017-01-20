@@ -23,8 +23,13 @@ class ViewController: UIViewController {
     @IBAction func openTestPresentation(_ sender: UIButton) {
         let path = Bundle.main.path(forResource: "space", ofType: "pdf")
         let renderer = SBImgRenderPdf(path: URL(fileURLWithPath: path!))
+        renderer.createPresentationPages()
+        
         
     }
 
+    @IBAction func castButton(_ sender: Any) {
+        
+    }
 }
 

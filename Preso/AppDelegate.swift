@@ -8,15 +8,19 @@
 
 import UIKit
 import CoreData
+import GoogleCast
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GCKLoggerDelegate {
 
     var window: UIWindow?
-
+    
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let options = GCKCastOptions(receiverApplicationID: "36ED3C8F")
+        GCKCastContext.setSharedInstanceWith(options)
+        GCKLogger.sharedInstance().delegate = self
         return true
     }
 
@@ -86,6 +90,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 let nserror = error as NSError
                 fatalError("Unresolved error \(nserror), \(nserror.userInfo)")
             }
+        }
+    }
+    
+    //MARK: GoogleCast Methods
+    
+    func log(fromFunction function: UnsafePointer<Int8>!, message: String!) {
+        if kGoogleCastDebugLoggingEnabled == true {
+            print("Func: \(function) message: \(message)")
         }
     }
 
